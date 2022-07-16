@@ -1,16 +1,3 @@
 <h3>Title</h3>
 
-<button
-onclick=play()>Play</button>
 
-<button
-onclick=More()>More</button>
-
-<script>
-function play(){
-alert("This is the play button")
-};
-  function more(){
-alert("This is the self promo button")
-};
-</script>
