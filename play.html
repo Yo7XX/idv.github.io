@@ -27,7 +27,7 @@ function myCheckHit(){
 
 </script>
    
-<img id="player" style="position:absolute; width:100px; height:80px; top:150px; left:300px;"  src="https://user-images.githubusercontent.com/109437211/179426323-8c8b21c6-f9f0-4c5e-bc61-e5358f85c494.png">
+<img id="player" style="position:absolute; width:100px; height:95px; top:50px; left:0px;"  src="https://user-images.githubusercontent.com/109437211/179426323-8c8b21c6-f9f0-4c5e-bc61-e5358f85c494.png">
 <img id="hunter" style="position:absolute; width:100px; height:95px; top:50px; left:250px;" src="https://user-images.githubusercontent.com/109437211/179426313-53ff1851-42db-4a24-821d-ba4cb6f97fec.png">
 
 
@@ -48,6 +48,6 @@ function myCheckHit(){
 
    
 <input type=button value="MEHHH" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('player').style.top = parseInt(document.getElementById('player').style.left) + 10 + 'px'
+  document.getElementById('player').style.left = parseInt(document.getElementById('player').style.left) + 10 + 'px'
   myCheckHit()
 }">
