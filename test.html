@@ -1,15 +1,18 @@
 
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://user-images.githubusercontent.com/91278104/144673708-2418e011-7a1b-451f-8759-49f23938be1a.png">
+V 0.2.45
 
-  <script>
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://user-images.githubusercontent.com/91278104/145694847-b4a77962-0f69-4792-88fe-1407128f2775.jpeg">
+
+<script> let mySound1 = new Audio('') </script>
    
+<script>
    
-   //this was a lot of copy pasting :/
-   //no alerts though 
+   // global vars
    let myGlobalX = 0
    let myClock
 
-  
+
+   // global functions
 function myHitOther(my1,my2){
    left1   = parseInt(document.getElementById(my1).style.left)
    right1  = left1 + parseInt(document.getElementById(my1).style.width)
@@ -26,301 +29,143 @@ function myHitOther(my1,my2){
        return true
    }
 }
-   
-   function myHitOther(my1,my3){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left3   = parseInt(document.getElementById(my3).style.left)
-   right3  = left3 + parseInt(document.getElementById(my3).style.width)
-   top3    = parseInt(document.getElementById(my3).style.top)   
-   bottom3 = top3   + parseInt(document.getElementById(my3).style.height)
-   if ((right1  >=  left3  ) &&      	   
-       (bottom1 >=  top3   ) &&
-       (left1   <=  right3 ) &&
-       (top1    <=  bottom3) ){
-       return true
-   }
-}
-   
-   function myHitOther(my1,my4){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left4   = parseInt(document.getElementById(my4).style.left)
-   right4  = left4 + parseInt(document.getElementById(my4).style.width)
-   top4    = parseInt(document.getElementById(my4).style.top)   
-   bottom4 = top4   + parseInt(document.getElementById(my4).style.height)
-   if ((right1  >=  left4  ) &&      	   
-       (bottom1 >=  top4   ) &&
-       (left1   <=  right4 ) &&
-       (top1    <=  bottom4) ){
-       return true
-   }
-}
-   
-   function myHitOther(my1,my5){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left5   = parseInt(document.getElementById(my5).style.left)
-   right5  = left5 + parseInt(document.getElementById(my5).style.width)
-   top5    = parseInt(document.getElementById(my5).style.top)   
-   bottom5 = top5   + parseInt(document.getElementById(my5).style.height)
-   if ((right1  >=  left5  ) &&      	   
-       (bottom1 >=  top5   ) &&
-       (left1   <=  right5 ) &&
-       (top1    <=  bottom5) ){
-       return true
-   }
-}
-   
-   
-   function myHitOther(my1,my6){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left6   = parseInt(document.getElementById(my6).style.left)
-   right6  = left6 + parseInt(document.getElementById(my6).style.width)
-   top6    = parseInt(document.getElementById(my6).style.top)   
-   bottom6 = top6   + parseInt(document.getElementById(my6).style.height)
-   if ((right1  >=  left6  ) &&      	   
-       (bottom1 >=  top6   ) &&
-       (left1   <=  right6 ) &&
-       (top1    <=  bottom6) ){
-       return true
-   }
-}
-   
-   function myHitOther(my1,my7){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left7   = parseInt(document.getElementById(my7).style.left)
-   right7  = left7 + parseInt(document.getElementById(my7).style.width)
-   top7    = parseInt(document.getElementById(my7).style.top)   
-   bottom7 = top7   + parseInt(document.getElementById(my7).style.height)
-   if ((right1  >=  left7  ) &&      	   
-       (bottom1 >=  top7   ) &&
-       (left1   <=  right7 ) &&
-       (top1    <=  bottom7) ){
-       return true
-   }
-}
-   
-   function myHitOther(my1,my8){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left8   = parseInt(document.getElementById(my8).style.left)
-   right8  = left8 + parseInt(document.getElementById(my8).style.width)
-   top8    = parseInt(document.getElementById(my8).style.top)   
-   bottom8 = top8   + parseInt(document.getElementById(my8).style.height)
-   if ((right1  >=  left8  ) &&      	   
-       (bottom1 >=  top8   ) &&
-       (left1   <=  right8 ) &&
-       (top1    <=  bottom8) ){
-       return true
-   }
-}
-   
-   function myHitOther(my1,my9){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left9   = parseInt(document.getElementById(my9).style.left)
-   right9  = left9 + parseInt(document.getElementById(my9).style.width)
-   top9    = parseInt(document.getElementById(my9).style.top)   
-   bottom9 = top9   + parseInt(document.getElementById(my9).style.height)
-   if ((right1  >=  left9  ) &&      	   
-       (bottom1 >=  top9   ) &&
-       (left1   <=  right9 ) &&
-       (top1    <=  bottom9) ){
-       return true
-   }
-}
-   
-   function myHitOther(my1,my10){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left10   = parseInt(document.getElementById(my10).style.left)
-   right10  = left10 + parseInt(document.getElementById(my10).style.width)
-   top10    = parseInt(document.getElementById(my10).style.top)   
-   bottom10 = top10   + parseInt(document.getElementById(my10).style.height)
-   if ((right1  >=  left10  ) &&      	   
-       (bottom1 >=  top10   ) &&
-       (left1   <=  right10 ) &&
-       (top1    <=  bottom10) ){
-       return true
-   }
-}
-   
-   function myHitOther(my1,my11){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left11   = parseInt(document.getElementById(my11).style.left)
-   right11  = left11 + parseInt(document.getElementById(my11).style.width)
-   top11    = parseInt(document.getElementById(my11).style.top)   
-   bottom11 = top11   + parseInt(document.getElementById(my11).style.height)
-   if ((right1  >=  left11  ) &&      	   
-       (bottom1 >=  top11   ) &&
-       (left1   <=  right11 ) &&
-       (top1    <=  bottom11) ){
-       return true
-   }
-}
-   
-   function myHitOther(my1,my12){
-   left1   = parseInt(document.getElementById(my1).style.left)
-   right1  = left1 + parseInt(document.getElementById(my1).style.width)
-   top1    = parseInt(document.getElementById(my1).style.top)   
-   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
-   left12   = parseInt(document.getElementById(my12).style.left)
-   right12  = left12 + parseInt(document.getElementById(my12).style.width)
-   top12    = parseInt(document.getElementById(my12).style.top)   
-   bottom12 = top12   + parseInt(document.getElementById(my12).style.height)
-   if ((right1  >=  left12  ) &&      	   
-       (bottom1 >=  top12   ) &&
-       (left1   <=  right12 ) &&
-       (top1    <=  bottom12) ){
-       return true
-   }
-}
 
 
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
-      document.getElementById('myTitle01').innerHTML = "YOU LOST (Dont touche the blue square things)"
-      document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"
+       document.getElementById('myImg01').style="position:absolute; width:100px; height:80px; top:150px; left:300px;"
    }
+   
    
    if ( myHitOther('myImg01','myImg04') ){
-      document.getElementById('myTitle01').innerHTML = "YOU LOST (Dont touche the blue rectangles)"
-      document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"
+       document.getElementById('myImg01').style="position:absolute; width:100px; height:80px; top:150px; left:300px;"
    }
+   
    
       if ( myHitOther('myImg01','myImg05') ){
-      document.getElementById('myTitle01').innerHTML = "YOU LOST (Dont touche the blue maze parts)"
-      document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"
+       document.getElementById('myImg01').style="position:absolute; width:100px; height:80px; top:150px; left:300px;"
    }
    
-      if ( myHitOther('myImg01','myImg06') ){
-      document.getElementById('myTitle01').innerHTML = "YOU LOSE (yes. I made a different message for all of these)"
-      document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"
+   
+   if ( myHitOther('myImg01','myImg06') ){
+       document.getElementById('myImg01').style="position:absolute; width:100px; height:80px; top:150px; left:300px;"
    }
    
-       if ( myHitOther('myImg01','myImg07') ){
-      document.getElementById('myTitle01').innerHTML = "YOU LOST (To be fair its a tight squeeze)"
-      document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"
+   
+   if ( myHitOther('myImg01','myImg07') ){
+       document.getElementById('myImg01').style="position:absolute; width:100px; height:80px; top:150px; left:300px;"
    }
    
-       if ( myHitOther('myImg01','myImg08') ){
-      document.getElementById('myTitle01').innerHTML = "YOU LOST (well... You were close at least)"
-      document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"
+   
+   if ( myHitOther('myImg01','myImg08') ){
+       document.getElementById('myImg01').style="position:absolute; width:100px; height:80px; top:150px; left:300px;"
    }
    
-       if ( myHitOther('myImg01','myImg09') ){
-         document.getElementById('myTitle01').innerHTML = "You cant go back (unless you reload the page)"
-         document.getElementById('myImg01').style.top = '-20px'
-      
+   
+   if ( myHitOther('myImg01','myImg09') ){
+       document.getElementById('myImg01').style="position:absolute; width:100px; height:80px; top:150px; left:300px;"
    }
    
-          if ( myHitOther('myImg01','myImg010') ){
-         document.getElementById('myTitle01').innerHTML = "YOU LOST (no going back)"
-         document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"
-      
+   if ( myHitOther('myImg01','myImg12') ){
+       document.getElementById('myImg01').style="position:absolute; width:100px; height:80px; top:150px; left:300px;"
    }
    
-          if ( myHitOther('myImg01','myImg011') ){
-         document.getElementById('myTitle01').innerHTML = "YOU WON (roam free)"
-         document.getElementById('myImg01').style.left = '1450px'
-      
+   if ( myHitOther('myImg01','myImg13') ){
+       document.getElementById('con1').style="position:absolute; left:100px; top:600px;"
+      document.getElementById('con2').style="position:absolute; left:200px; top:600px;"
+      document.getElementById('con3').style="position:absolute; left:300px; top:600px;"
+      document.getElementById('con4').style="position:absolute; left:400px; top:600px;"
    }
    
-         if ( myHitOther('myImg01','myImg012') ){
-         document.getElementById('myTitle01').innerHTML = "YOU WON (dive into the sky)"
-         document.getElementById('myImg01').style.top = '700px'
-      
+   if ( myHitOther('myImg01','myImg14') ){
+       document.getElementById('con1').style="position:absolute; left:100px; top:10px;"
+      document.getElementById('con2').style="position:absolute; left:200px; top:10px;"
+      document.getElementById('con3').style="position:absolute; left:300px; top:10px;"
+      document.getElementById('con4').style="position:absolute; left:400px; top:10px;"
    }
    
-      if ( myHitOther('myImg01','myImg03') ){
-      document.getElementById('myTitle01').innerHTML = "YOU WIN!! (GG)"
-      document.getElementById('myImg01').style="position: absolute; width: 100px; height: 80px; top: 50px; left: 40px;"
-      }
+   
+      if ( myHitOther('myImg01','myImg15') ){
+       document.getElementById('con1').style="position:absolute; left:100px; top:10px;"
+      document.getElementById('con2').style="position:absolute; left:200px; top:10px;"
+      document.getElementById('con3').style="position:absolute; left:300px; top:10px;"
+      document.getElementById('con4').style="position:absolute; left:400px; top:10px;"
+         document.getElementById('dio').style= "position:absolute; width:120px; height:100px; top:150px; left:30px;"
+         document.getElementById('myImg15').style= "position:absolute; width:120px; height:0px; top:1px; left:30px;"
+         document.getElementById('dio').innerHTML = 'Talk!'
+         
+           for (let num = 0; num < 5; num++) {
+            mySound1.play()
+                                             }
+         
+}
+   
+   
+       if ( myHitOther('myImg01','myImg011') ){
+       document.getElementById('dio').innerHTML = 'thank goodness your here angry red blob wont leave me alone go see what it wants'
+          document.getElementById('dio').style= "position:absolute; width:100px; height:80px; top:100px; left:150px;"
+          document.getElementById('myImg012').style= "position:absolute; width:100px; height:80px; top:830px; left:30px;"
+   }
+   
+   
+   if ( myHitOther('myImg01','myImg012') ){
+       document.getElementById('dio').innerHTML = 'hello i need your help getting a magic item i left in another demention if would would be so kind as to grab that fore me ill even open the portal for you'
+          document.getElementById('dio').style= "position:absolute; width:200px; height:80px; top:780px; left:150px;"
+      document.getElementById('myImg12').style= "position:absolute; width:200px; height:20px; top:1000px; left:500px;"
+   }
+   
+   
+   if ( myHitOther('myImg01','myImg10') ){
+       location = 'https://luca555555.github.io/game-dev-luca-2021/public/jumper/index.html'
+   }
 
-   //thank god that broke so many times!!!!!!!!!!!
 
+   //if stat's here
+   //position:absolute; width:100px; height:80px; top:830px; left:30px;
+   
 }
 
-
+// myImg01 = player | igm10=tp
 </script>
-
-      
-      
-<imput type=hidden value="probaby the worst way to get img's posible lol">
-       
-<img id="myImg01" style="position: absolute; width: 100px; height: 80px; top: 270px; left: 40px;"  src="https://user-images.githubusercontent.com/91278104/144320001-242b47df-144c-4497-b4db-e7ddc80d2c15.jpeg">
-<img id="myImg02" style="position:absolute; width:1400px; height:80px; top:150px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg03" style="position:absolute; width:190px; height:170px; top:230px; left:1210px;" src="https://user-images.githubusercontent.com/91278104/144321838-8994649d-b50b-4fc2-bdac-4cdd940de613.png">
-<img id="myImg04" style="position:absolute; width:1400px; height:90px; top:500px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg05" style="position:absolute; width:100px; height:130px; top:230px; left:200px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg06" style="position:absolute; width:300px; height:130px; top:400px; left:470px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg07" style="position:absolute; width:100px; height:130px; top:230px; left:900px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg08" style="position:absolute; width:250px; height:130px; top:400px; left:1150px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg09" style="position:absolute; width:1400px; height:10px; top:140px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg010" style="position:absolute; width:10px; height:270px; top:230px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg011" style="position:absolute; width:10px; height:450px; top:140px; left:1400px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
-<img id="myImg012" style="position:absolute; width:1410px; height:10px; top:590px; left:0px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
+   
+<img id="myImg01" style="position:absolute; width:100px; height:80px; top:150px; left:300px;"  src="https://user-images.githubusercontent.com/91278104/145694829-caeeadbe-1a4e-42ac-8001-b4d68135bc79.jpeg">
+<img id="myImg011" style="position:absolute; width:100px; height:80px; top:80px; left:30px;"  src="https://user-images.githubusercontent.com/91278104/145694832-d5bd7e8c-0ace-4143-af47-479a6ce53c6d.jpeg">
+<img id="myImg012" style="position: absolute; width: 200px; height: 10px; top: 740px; left: 500px;"  src="https://user-images.githubusercontent.com/91278104/146267226-03a89bff-afdd-4240-b4ac-23d4f86a1976.png">
+<img id="myImg02" style="position:absolute; width:700px; height:20px; top:50px; left:0px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg04" style="position:absolute; width:20px; height:970px; top:50px; left:0px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg05" style="position:absolute; width:700px; height:20px; top:730px; left:20px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg06" style="position:absolute; width:20px; height:250px; top:50px; left:700px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg07" style="position:absolute; width:20px; height:250px; top:500px; left:700px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg08" style="position:absolute; width:20px; height:730px; top:280px; left:900px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg09" style="position:absolute; width:700px; height:20px; top:1000px; left:20px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg10" style="position:absolute; width:200px; height:20px; top:1000px; left:720px;" src="https://user-images.githubusercontent.com/91278104/144320548-7329d029-535f-475a-90f6-c330dfdc1d72.png">
+<img id="myImg11" style="position:absolute; width:200px; height:20px; top:280px; left:700px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg12" style="position:absolute; width:200px; height:20px; top:1000px; left:720px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg13" style="position:absolute; width:200px; height:0px; top:600px; left:720px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg14" style="position:absolute; width:200px; height:0px; top:550px; left:720px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
+<img id="myImg15" style="position:absolute; width:100px; height:0px; top:150px; left:300px;" src="https://user-images.githubusercontent.com/91278104/145695099-2ccdf990-a69a-440b-9381-7007405578b2.jpeg">
    
    
-<body onload="{
-  clearInterval(myClock)
-  let myTemp = '100px 0px'
-  myClock = setInterval(function(){
-      myGlobalX += 5
-      myTemp =  myGlobalX + 'px 0px'
-      document.getElementById('myBody').style.backgroundPosition = myTemp
-  }, 80)
-              
-}">
-
    
-
    
-<input type=button value="Move left"="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + -10 + 'px'
-  myCheckHit()     //why
-}">
-   
-<input type=button value="Move right"="{this.click(); event.preventDefault();}" onclick="{
+<input type=button id="con1" value="Player Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()   //did
+  myCheckHit()
 }">
    
-<input type=button value="Move up"="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -10 + 'px'
-  myCheckHit()     //this
+<input type=button id="con2" value="Player Left" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + -10 + 'px'
+  myCheckHit()
 }">
    
-   
-<input type=button value="Move down"="{this.click(); event.preventDefault();}" onclick="{
+<input type=button id="con3" value="Player Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
-  myCheckHit()     //break
+  myCheckHit()
 }">
    
-   <imput type=hidden value="f*ck google for not letting me play this onload (yes I know its bad music go away)">
+<input type=button id="con4" value="Player UP" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -10 + 'px'
+  myCheckHit()
+}">
    
-   <input type=button value="(bad)Music" onclick="{
-              mySound1.play()
-              }">
+<h3 align=center id=dio> </h3>
