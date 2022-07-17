@@ -19,7 +19,7 @@ function myHitOther(my1,my2){
 
 
 function myCheckHit(){
-   if ( myHitOther('myImg01','myImg02') ){
+   if ( myHitOther('player','hunter') ){
        document.write("You lose")
    }
    
@@ -27,8 +27,8 @@ function myCheckHit(){
 
 </script>
    
-<img id="myImg01" style="position:absolute; width:100px; height:80px; top:150px; left:300px;"  src="https://user-images.githubusercontent.com/109437211/179426323-8c8b21c6-f9f0-4c5e-bc61-e5358f85c494.png">
-<img id="myImg02" style="position:absolute; width:700px; height:20px; top:50px; left:0px;" src="https://user-images.githubusercontent.com/109437211/179426313-53ff1851-42db-4a24-821d-ba4cb6f97fec.png">
+<img id="player" style="position:absolute; width:100px; height:80px; top:150px; left:300px;"  src="https://user-images.githubusercontent.com/109437211/179426323-8c8b21c6-f9f0-4c5e-bc61-e5358f85c494.png">
+<img id="hunter" style="position:absolute; width:700px; height:20px; top:50px; left:0px;" src="https://user-images.githubusercontent.com/109437211/179426313-53ff1851-42db-4a24-821d-ba4cb6f97fec.png">
 
    
 <input type=button id="con4" value="UP" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
