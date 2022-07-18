@@ -57,3 +57,11 @@ function myCheckHit(){
   document.getElementById('player').style.left = parseInt(document.getElementById('player').style.left) + 10 + 'px'
   myCheckHit()
 }">
+
+<script>
+   $(document).keyup(function(event) {
+    if (event.which === 13) {
+        alert('Enter is pressed!');
+    }
+});
+</script>
