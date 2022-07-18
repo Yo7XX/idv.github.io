@@ -59,8 +59,8 @@ function myCheckHit(){
 }">
 
 <script>
-   $(document).keyup(function(event) {
-    if (event.which === 13) {
+   document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
         alert('Enter is pressed!');
     }
 });
